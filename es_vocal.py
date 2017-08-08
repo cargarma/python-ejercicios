@@ -4,10 +4,7 @@ def es_vocal(elemento):
   #Comprueba tipo str
 	if isinstance(elemento, str) :
 		vocales = 'aáãâàäeéèêëiíìiîïoóòõôöuúùûü'
-		if elemento.lower() in vocales:
-			return True
-		else:  			
-			return False
+		return elemento.lower() in vocales			
 	else:
 		return False
 
