@@ -1,3 +1,5 @@
+# Función que calcule la longitud de una lista o una cadena dada
+
 def longitud(elemento):
 	contador = 0
 	for i in elemento:
