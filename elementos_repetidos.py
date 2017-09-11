@@ -1,15 +1,7 @@
  #Dada una lista, devolver los elementos repetidos
 
- dictionary =  {}
-
-    for number in data:
-        if number in dictionary:
-            dictionary[number] += 1
-        else:
-		    dictionary[number] = 1
-    
-    result = []
-    for number in data:
-        if dictionary[number]>1:
-            result.append(number)
-
+ data_copy = data[:] #create a copy that won't mutate
+    for num in data_copy: #iterate thru the list copy
+        if data.count(num) == 1:
+            data.remove(num) #delete from original list
+    return data
